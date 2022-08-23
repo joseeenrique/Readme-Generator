@@ -36,18 +36,35 @@ const questions = [
 
 {
     type:"input",
-    name:"title",
-    message: "What is the title?",
-    validate: user_input => {
-        if (user_input){
+    name:"install",
+    message: "how to install?",
+    validate: user_install => {
+        if (user_install) {
             return true;
         } else{
-            console.log("enter title");
+            console.log("enter install steps");
             return false;
 
         }
     }
 },
+
+{
+    type:"input",
+    name:"usage",
+    message: "how to use?",
+    validate: user_usage => {
+        if (user_usage){
+            return true;
+        } else{
+            console.log("enter how to use");
+            return false;
+
+        }
+    }
+},
+
+
 ];
 
 // TODO: Create a function to write README file

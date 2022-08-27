@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
-const packages = require("packages");
 const fs = require("fs");
 const generateMarkdown = require ("./utils/generateMarkdown.js");
-const { default: inquirer } = require("inquirer");
+const inquirer = require("inquirer");
 console.log("Welcome")
 console.log("answer questions to continue")
 const questions = [
@@ -69,7 +68,7 @@ const questions = [
     type:"checkbox",
     name:"license",
     message: "choose license",
-    choices: ["MPL 2.0","APACHE","MIT","NONE"]
+    choices: ["MPL 2.0","APACHE","MIT","NONE"],
     validate: user_license => {
         if (user_license){
             return true;
@@ -146,7 +145,7 @@ function writeToFile(fileName, data) {
         if (err){
             return console.log(err);
         }
-        console.log("Congrats. here is a prew=view of your README")
+        console.log("Congrats. here is a preview of your README")
     });
 };
 

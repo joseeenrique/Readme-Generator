@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   let licenseType = license.license; 
   let yourLicense = ''
   if(licenseType === 'MIT') {
-    yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+    yourLicense = `![License: MIT](https://img.shields.io/badge/license-MIT-blue)`
   } else if (licenseType === 'GPLv3') {
     yourLicense = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`
   } else if (licenseType === 'GPL') {
@@ -54,6 +54,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+## License :
 
 `;
 }

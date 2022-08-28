@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
   let licenseType = license.license; 
   let yourLicense = ''
   if(licenseType === 'MIT') {
-    // need to add license links inside parenthesis
+    // need to add license links Description inside parenthesis
     yourLicense = `![License: MIT]()`
   } else if (licenseType === 'GPLv3') {
     yourLicense = `![GPLv3 license]()`
@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
   let licenseType = license.license; 
   let yourLicense = ''
   if(licenseType === 'MIT') {
-    // need to add license section inside parenthesis
+    // need to add license section Descriptionide parenthesis
     yourLicense = `![License: MIT]()`
   } else if (licenseType === 'GPLv3') {
     yourLicense = `![GPLv3 license]()`
@@ -55,7 +55,28 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 ## License :
+[![license](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/License-GPLv3-blue.svg)(https://img.shields.io/badge/License-GPL-blue.svg)
 
+## Table of Contents
+[Title](#title)
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contribution](#contribution)
+
+## Title:
+${data.title}
+## Description
+${data.description}
+## Installation
+${data.installation}
+## Usage
+${data.usage}
+## License
+${data.license}
+## Contribution
+${data.contribution}
 `;
 }
 

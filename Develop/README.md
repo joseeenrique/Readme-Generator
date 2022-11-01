@@ -1,4 +1,4 @@
-# weather app
+# team profile generator
 ## License :
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://img.shields.io/badge/License-GPLv3-blue.svg)(https://img.shields.io/badge/License-GPL-blue.svg)
 
@@ -11,14 +11,14 @@
 [Contribution](#contribution)
 
 ## Title:
-weather app
+team profile generator
 ## Description
-our page is able to populate weather information for cities being searched
+with help of this command based page you will be able to create new employee profiles with contact information
 ## Installation
 undefined
 ## Usage
-you will type in desired city or state in the "Search" bar and weather details will generate
+answer the questions to get a profile created
 ## License
 
 ## Contribution
-none
+n/a
